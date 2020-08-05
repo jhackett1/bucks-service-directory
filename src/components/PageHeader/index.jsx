@@ -89,7 +89,7 @@ const PageHeader = () =>
                     <Breadcrumb><A href="https://www.buckscc.gov.uk">Home</A></Breadcrumb>
                     <Breadcrumb>Directory</Breadcrumb>
                 </Breadcrumbs>
-                <PageTitle>Find activites, groups and services near you</PageTitle>
+                <PageTitle>Find activities, groups and services near you</PageTitle>
                 <Lede>Answer a few questions to find support in your area, lots of it free.</Lede>
             </Panel>
         </Inner>
