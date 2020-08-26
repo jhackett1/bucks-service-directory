@@ -90,7 +90,7 @@ const PageHeader = () =>
                     <Breadcrumb>Directory</Breadcrumb>
                 </Breadcrumbs>
                 <PageTitle>Find activities, groups and services near you</PageTitle>
-                <Lede>Answer a few questions to find support in your area, lots of it free.</Lede>
+                <Lede>Answer a few questions to help with your search.</Lede>
             </Panel>
         </Inner>
     </Outer>
