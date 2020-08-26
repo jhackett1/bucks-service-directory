@@ -25,7 +25,7 @@ module.exports = {
         },
         {
             value: "support",
-            label: "Support with daily tasks"
+            label: "Support with health and wellbeing"
         }
     ],
     // supportOptions: [
