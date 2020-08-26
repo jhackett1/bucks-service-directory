@@ -64,7 +64,7 @@ const Shortlist = ({
         <ShortlistContextConsumer>
             { context =>
                 <>
-                    <Button onClick={() => setDialogOpen(true)}>
+                    <Button onClick={() => setDialogOpen(true)} title="Adding services to your shortlist saves them to this browser for you to review later or print. Look for the heart icon.">
                         {context.shortlist.length > 0 ?
                             <><strong>See shortlist</strong> ({context.shortlist.length})</>
                             :
