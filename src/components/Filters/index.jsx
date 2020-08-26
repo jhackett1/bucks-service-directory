@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import LocationFilter from "./LocationFilter"
 import Filter from "./Filter"
+import MultipleFilter from "./MultipleFilter"
 import Shortlist from "../Shortlist"
 import config from "../../_config"
 import Share from  "../Share"
@@ -25,16 +26,15 @@ const Right = styled.div`
 
 const Filters = ({
     setInitialBounds
-}) =>
+}) => 
     <Outer>
         <div>
             <LocationFilter/>
-            <Filter
-                label="Kinds of help"
-                name="category"
-                options={config.interestsOptions}
-                setInitialBounds={setInitialBounds}
-            />
+            <MultipleFilter
+                    label="Kinds of help"
+                    options={config}
+                    setInitialBounds={setInitialBounds}
+            /> 
             <Filter
                 label="When you're free"
                 name="days"
@@ -58,6 +58,6 @@ const Filters = ({
             <Shortlist/>
             <Share/>
         </Right>
-    </Outer>
+    </Outer>      
     
 export default Filters
