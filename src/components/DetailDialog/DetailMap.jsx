@@ -26,6 +26,7 @@ const Map = ({
                     streetViewControl: false,
                     fullscreenControl: false,
                     zoomControl: false,
+                    draggable: false
                 }}
                 zoom={15}
                 center={{
