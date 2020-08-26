@@ -26,8 +26,8 @@ const IndexPage = () =>
             <ContentArea>
                 <TwoThirdsColumn>
                     <AlertBox>
-                        <p>This service is being updated to help vulnerable people who are staying at home due to <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
-                        <p>We're adding local services that can help with groceries and similar daily tasks.</p>
+                        <p>The activities and services listed on the directory may be affected by <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">Coronavirus</a>.</p>
+                        <p>Before attending, check the activity is running and that the organisers are following government guidance.</p>
                     </AlertBox>
                     <Form/>
                 </TwoThirdsColumn>
