@@ -30,3 +30,4 @@ It looks for these environment variables:
 - `REACT_APP_API_HOST`: the location of the backing API, with protocol included
 - `REACT_APP_GOOGLE_CLIENT_KEY`: for using mapping functionality.
 - `REACT_APP_GA_PROPERTY_ID`: for Google Analytics
+ 
