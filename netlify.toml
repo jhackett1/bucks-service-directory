@@ -7,9 +7,9 @@
     to = "/index.html"
     status = 200
 
-# https://docs.netlify.com/site-deploys/overview/#deploy-contexts
+# https://docs.netlify.com/site-deploys/overview/#deploy-contextsg
 # Specific branch context:
 # Deploys from this branch will take these settings
 # and override their current ones.
-[context.develop]
+[context.develop.environment]
   REACT_APP_API_HOST = "https://bucks-care-staging.herokuapp.com/"
