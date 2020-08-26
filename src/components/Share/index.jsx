@@ -124,6 +124,8 @@ const Share = () => {
                             {(response === 500 || response === "fail") && <Alert>There was a problem sharing. If this continues, please try again later</Alert>}
                             {(response === 404) && <Alert>We couldn't share to that {(medium === "sms")? "phone number" : "email"}. Please check it and try again.</Alert>}
 
+                            <p>Sharing this page will send a link to the current page url to the entered recipient.</p>
+                            <br />
                             <Fieldset>
                                 <legend>Share by:</legend>
                                 <Radio required name="medium" onChange={reset} checked={"email" === medium} value="email">Email</Radio>
