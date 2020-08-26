@@ -51,11 +51,11 @@ const ShortlistButton = ({
     { context =>
         <Outer aria-live="polite">
             {context.isInShortlist(service.assetId) ? 
-                <Button onClick={()=>{context.removeFromShortlist(service.assetId)}}>
+                <Button onClick={()=>{context.removeFromShortlist(service.assetId)}} title="Remove from shortlist">
                     <img alt="Remove from shortlist" src={filled}/>
                 </Button>
                 : 
-                <Button onClick={()=>{context.addToShortlist(service)}}>
+                <Button onClick={()=>{context.addToShortlist(service)}} title="Add to shortlist" >
                     <img alt="Add to shortlist" src={unfilled}/>
                 </Button>
             }
