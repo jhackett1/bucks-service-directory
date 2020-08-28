@@ -152,6 +152,9 @@ const MultipleFilter = ({
     const clearFilter = (e) => {
         if(e) e.preventDefault()
         changeCategory([])
+        changeKeywords([])
+        setIsCoronavirusCategorySelected(false);
+        setIsSupportCategorySelected(false);
     }
 
     const handleSubmit = (e) => {
