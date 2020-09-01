@@ -198,7 +198,7 @@ const DetailDialog = ({
 
   let keywords = [];
   if(service.hasOwnProperty('keywords') && service.keywords.length > 0) {
-    [...config.coronaCategoryOptions, ...config.supportCategoryOptions].map(keyword => {
+    [...config.coronaCategoryOptions, ...config.supportCategoryOptions].forEach(keyword => {
       if (service.keywords.indexOf(keyword.value) !== -1) {
         keywords.push(keyword.label);
       }
