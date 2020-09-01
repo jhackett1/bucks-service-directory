@@ -10,6 +10,7 @@ import Checklists from "./Checklists"
 import fetch from "isomorphic-unfetch"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet"
+import config from "../../_config"
 
 const StyledDialog = styled(Dialog)`
   position: relative;
@@ -194,6 +195,19 @@ const DetailDialog = ({
     history.push(`/services${location.search}`)
   }
 
+
+  let keywords = [];
+  if(service.hasOwnProperty('keywords') && service.keywords.length > 0) {
+    [...config.coronaCategoryOptions, ...config.supportCategoryOptions].forEach(keyword => {
+      if (service.keywords.indexOf(keyword.value) !== -1) {
+        keywords.push(keyword.label);
+      }
+    });
+  }
+
+    
+
+
   return(
     <StyledDialog 
       isOpen={true} 
@@ -240,6 +254,14 @@ const DetailDialog = ({
             {service.phone && <p>{service.phone}</p>}
             {service.email && <p><a href={`mailto:${service.email}`}>{service.email}</a></p>}
           </Panel>
+
+          {keywords.length > 0 && 
+          <Panel>
+            <Subheadline>Subcategories</Subheadline>
+            <p>{keywords.join(", ")}</p>
+          </Panel>
+          }
+
           <MobilePanel>
             <Subheadline>Where</Subheadline>
             <p>{service.venue}</p>

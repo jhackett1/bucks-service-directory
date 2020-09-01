@@ -25,8 +25,56 @@ module.exports = {
         },
         {
             value: "support",
-            label: "Support with daily tasks"
+            label: "Support with health and wellbeing"
         }
+    ],
+    coronaCategoryOptions: [
+        {
+            value: "corona-shopping",
+            label: "Groceries and help with shopping"
+        },
+        {
+            value: "corona-prescription",
+            label: "Prescription collection and delivery"
+        },
+        {
+            value: "corona-food-collection-delivery",
+            label: "Food and drink collection and delivery"
+        },
+        {
+            value: "corona-entertainment",
+            label: "Book drops and entertainment"
+        },
+        {
+            value: "corona-pets",
+            label: "Dog walking and help with pets"
+        },
+    ],
+    supportCategoryOptions: [
+        {
+            value: "befriending",
+            label: "Befriending"
+        },
+        {
+            value: "faith-groups",
+            label: "Faith groups"
+        },
+        {
+            value: "foodbanks",
+            label: "Foodbanks"
+        },
+        {
+            value: "health-wellbeing-disability-support",
+            label: "Health, wellbeing & disability support"
+        },
+        {
+            value: "elderly-services",
+            label: "Services for older people"
+        },
+        {
+            value: "transport",
+            label: "Transport"
+        },
     ],
     // supportOptions: [
     //     {

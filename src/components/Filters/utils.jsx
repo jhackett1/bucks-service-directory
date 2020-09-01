@@ -51,6 +51,7 @@ export const Headline = styled.h3`
 `
 
 export const Grid = styled.div`
+    padding-bottom: 55px;   
     @media screen and (min-width: 700px){
         display: grid;
         grid-template-columns: 1fr 1fr;
