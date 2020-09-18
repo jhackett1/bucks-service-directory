@@ -156,15 +156,15 @@ const Layout = ({
     <Outer fullPage={fullPage}>
         <Header>
             <HeaderContainer fullPage={fullPage}>
-                <Masthead href="https://buckinghamshire.gov.uk">
+                <Masthead href="https://www.buckinghamshire.gov.uk">
                     <img src={masthead} alt="Buckinghamshire Council"/>
                 </Masthead>
                 <SearchForm
                     method="get"
-                    action="https://www.buckscc.gov.uk/search"
+                    action="https://www.buckinghamshire.gov.uk/search/"
                 >
-                    <HiddenLabel htmlFor="q">Search query</HiddenLabel>
-                    <Input name="q" id="q" required placeholder="Search our websites"/>
+                    <HiddenLabel htmlFor="query">Search query</HiddenLabel>
+                    <Input name="query" id="query" required placeholder="Search our websites"/>
                     <Button type="submit"><img src={search} alt="Search"/></Button>
                 </SearchForm>
             </HeaderContainer>
