@@ -26,6 +26,9 @@ const IndexPage = () =>
             <ContentArea>
                 <TwoThirdsColumn>
                     <AlertBox>
+                           <p>Activities and services may be affected by <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+                           <p>Before attending, check the activity is running and that the organisers are following government guidance.</p>
+      
                            <p>Our <a href="https://www.bucksfamilyinfo.org/kb5/buckinghamshire/fsd/home.page">family information service</a> supports families with children aged under 19 (or under 25 for those with SEND).</p>
                            <p>If you need urgent help (like food parcels, or emergency respite childcare), you can <a href="https://www.bucksfamilyinfo.org/kb5/buckinghamshire/fsd/contact.page">get in touch by phone or email</a>.</p>
                     </AlertBox>
